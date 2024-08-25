@@ -3,3 +3,13 @@ rank_bm25
 
 tf-keras
 sentence_transformers
+
+# LangChain
+
+langchain
+langchain-community
+langchain-ollama
+
+
+# UI
+reflex

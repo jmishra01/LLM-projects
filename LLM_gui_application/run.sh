@@ -1,0 +1,3 @@
+#!/bin/bash
+
+reflex run
