@@ -5,11 +5,17 @@ tf-keras
 sentence_transformers
 
 # LangChain
-
 langchain
 langchain-community
 langchain-ollama
 
+# VectorDB
+faiss-cpu
+
+# Files
+pypdf
+docarray
+pydantic
 
 # UI
 reflex
