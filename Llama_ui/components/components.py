@@ -1,5 +1,3 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-
 import reflex as rx
 from rxconfig import config
 
@@ -71,17 +69,14 @@ def inference_area():
         rx.scroll_area(
             rx.text(rx.markdown(State.text), width="100%")
         ),
-        width="100%", height="20em",
-    )
+        width="100%", height="20em")
 
 def prompt_area():
     return rx.vstack(
         rx.text_area(
             value=State.value,
-            width="100%",
-            height="18em",
-            on_change=State.set_text,
-            margin="1px"),
+            width="100%", height="18em",
+            on_change=State.set_text, margin="1px"),
         rx.hstack(
             rx.button("Submit", on_click=State.inference),
             rx.button("Sample", on_click=State.set_value),
@@ -90,20 +85,19 @@ def prompt_area():
         ),
         width="100%",
         margin="3px",
-        border="solid 1px #333 "
+        border="solid 1px #333"
     )
 
 
 def index():
     return rx.container(
         rx.vstack(
-            rx.heading("LLM GUI Application", 
+            rx.heading("Llama UI", 
                        align="center",
                        margin_left="22em"
                        ),
             prompt_area(),
-            inference_area(),
-            height="60em"
+            inference_area()
         ),
         size="4"
     )
